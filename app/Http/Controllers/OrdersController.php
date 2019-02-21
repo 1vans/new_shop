@@ -88,7 +88,7 @@ class OrdersController extends Controller
             return $order;
         });
 
-
+        return $order;
     }
 
 }
