@@ -24,7 +24,10 @@ class OrderPaid
     {
         $this->order = $order;
     }
-
+    public function getOrder()
+    {
+        return $this->order;
+    }
 
     /**
      * Get the channels the event should broadcast on.
@@ -36,8 +39,5 @@ class OrderPaid
         return new PrivateChannel('channel-name');
     }
 
-    public function getOrder()
-    {
-        return $this->order;
-    }
+
 }
